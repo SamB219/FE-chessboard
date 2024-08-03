@@ -1,12 +1,13 @@
+import React from 'react';
+import NavBar from './components/navBar.jsx';
+import '../src/styles/App.css';
+import "../src/styles/navBar.css";
 
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Chess Board</h1>
-      <navBar/>
-
+      <NavBar />
     </div>
   );
 }
