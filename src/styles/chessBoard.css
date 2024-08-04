@@ -1,0 +1,53 @@
+:root {
+    --tile-size: 90px; /* tile size styling */
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(8, var(--tile-size));
+    grid-template-rows: repeat(8, var(--tile-size));
+    width: calc(8 * var(--tile-size));
+    height: calc(8 * var(--tile-size));
+}
+
+.tile {
+    position: relative;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.light {
+    background-color: #f0d9b5; /* light square color */
+}
+
+.dark {
+    background-color: #b58863; /* dark square color */
+}
+
+.file-label {
+    position: absolute;
+    bottom: 5px; /* Position at the bottom of the tile */
+    left: 5px;   /* Position at the left edge of the tile */
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.rank-label {
+    position: absolute;
+    top: 5px;    /* Position at the top of the tile */
+    right: 5px;  /* Position at the right edge of the tile */
+    font-size: 16px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+}
