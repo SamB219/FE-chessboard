@@ -1,22 +1,23 @@
 .NavBar {
-    display: flex;
-    flex-direction: column; 
-    background-color: rgb(130, 27, 27);
-    border: 1px solid black; 
     height: 100%;
-    width: 10%; 
+    width: 145px; 
+    position: fixed;
+    z-index: 0; 
+    top: 0; 
+    left: 0;
+    background-color: #000000; 
+    overflow-x: hidden; 
+    padding-top: 20px;
 }
 
 .NavBar a {
-    color: white; 
-    text-decoration: none; 
-    padding: 8px 16px;
-    padding-top: 50%;
-    padding-bottom: 50%; 
-    display: block; 
-    text-align: center; 
+    padding: 9px 9px 9px 18px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ebe9e9;
+    display: flex; 
 }
 
 .NavBar a:hover {
-    background-color: rgb(158, 34, 34); 
+    color: #63a717;
 }
